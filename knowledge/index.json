@@ -415,6 +415,52 @@
   ]
  },
  {
+  "path": "games/minecraft/bloons-td-6-in-minecraft.md",
+  "kind": "game",
+  "title": "Bloons TD 6 inside Minecraft: the guest's rules as a headless 2D sim, Minecraft as the view",
+  "game": "Minecraft",
+  "games_also": [
+   "Bloons TD 6"
+  ],
+  "game_version": "Minecraft Java 1.20.1 + Forge 47.2.0 (dev and benches; also runs on Forge 47.4.10 in the user's modded instance), Java 17, official mappings. Guest: Bloons TD 6 v56.3, Epic Games Store build, Unity 6000.0.58f2, IL2CPP, Addressables 2.9.1",
+  "platform": "windows",
+  "engine": "java",
+  "route": "reimplementation",
+  "tools": [
+   "Forge MDK 1.20.1-47.2.0 (Gradle, official mappings, JDK 17)",
+   "javac + a plain-Java bench (engine tested without Minecraft or Gradle)",
+   "Python 3.14 + UnityPy 1.25.4 + Pillow + numpy",
+   "fmod_toolkit (FMOD decoding of AudioClips)",
+   "ffmpeg (OGG Vorbis, mono)"
+  ],
+  "anti_cheat": "none on the host side. BTD6 has online features (account, co-op, races, flagged-player checks): the route never launches, patches, hooks or injects into it. Only its asset files were read offline, read-only, from the user's own install",
+  "status": "working",
+  "agents": [
+   "Claude Code (Opus 5.5)"
+  ],
+  "humans": [
+   "Ratman258"
+  ],
+  "date": "2026-10-04",
+  "links": [],
+  "tags": [
+   "mashup",
+   "reimplementation",
+   "headless-sim",
+   "tower-defense",
+   "forge",
+   "unity6",
+   "unitypy",
+   "addressables",
+   "local-resource-pack",
+   "skinning",
+   "mirror-entities",
+   "client-side-projectiles",
+   "config-toml",
+   "benches"
+  ]
+ },
+ {
   "path": "games/minecraft/neoforge-1-21-1-custom-dimension-and-tool-tier.md",
   "kind": "game",
   "title": "NeoForge 1.21.1 custom dimension and tool tier",
